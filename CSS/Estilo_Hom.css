@@ -1,0 +1,109 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+body{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+*{
+    font-family:'Montserrat', sans-serif;
+}
+
+.contenedor{
+    width: 100%;
+    margin: auto;
+}
+
+img{
+    width: 100%;
+}
+
+.banner{
+    height: 50vh;
+    margin-top: -5%;
+    position: relative;
+    background: url(../Images/bck8.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.banner_descripcion{
+    position: absolute;
+    background:rgba (0,0,0,0.5);
+    text-align:left;
+    transform: translateX(1%) translateY(40%);
+    color:rgb(0, 0, 0);
+    padding:50px;
+    font-size:100px;
+    font-weight: bolder;
+}
+
+/*MENU*/
+.menu{
+    padding:0px ;
+    margin: auto;
+    width: 700px;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+.nav li a{
+    color: black;
+    text-decoration: none;
+    padding: 10px 50px;
+    display:block ;
+    background-color: rgb(252, 246, 240);
+}
+
+.nav li a:hover{
+    color: rgb(141, 75, 0);
+}
+
+.nav li ul{
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+
+.nav li:hover > ul{
+    display: block;
+}
+
+/*HOME*/
+.contenedor-h{
+    margin:50px 50px 50px 5%;
+    width:90%;
+    text-align:center;
+}
+
+.categorias{
+    width:max-content;
+    margin:25px;
+    border:1px transparent;
+    display:inline-block;    
+}
+
+.categorias:hover{
+    box-shadow:0 0 10px 3px #d1cbbc;
+}
+
+.item-image {
+    height:200px;
+    width:200px;
+    border-radius:10px 10px 10px 10px;
+    padding:10px;
+}
+
+.image-title{
+    text-align:center;
+    padding:10px;
+    font-weight:bold;
+}
+
+a{
+    text-decoration:none;
+    color: rgb(67, 52, 23);
+}
+    
