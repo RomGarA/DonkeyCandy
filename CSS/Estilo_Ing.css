@@ -1,0 +1,106 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background: url(../Images/bck2.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+    }
+        
+    .contenedor{
+        width: 90%;
+        padding: 25px;
+    }
+
+    img{
+        position: absolute;
+        top: 100px;
+        left:calc(50% - 40px);
+    }
+    
+    .formulario{
+        background-color:rgba(0, 0, 0, 0.3);
+        margin-top: 150px;
+        padding: 40px;
+    }
+
+    h1{
+        text-align: center;
+        color: #ffffff;
+        font-size: 40px;
+    }
+    
+    input[type="text"],
+    input[type="password"]{
+        font-size: 20px;
+        width: 82%;
+        padding: 10px;
+        border:none;
+    }
+    
+    .input-contenedor{
+        margin-bottom: 15px;
+        border: 1px solid rgb(255, 255, 255);
+    }
+
+    .input-contenedor input{
+        background: none;
+        color: white;
+        outline: none;
+    }
+
+    ::placeholder {
+        color: rgb(203, 203, 203);
+        opacity: 1;
+    }
+    
+    .icon{
+        min-width: 50px;
+        text-align: center;
+        color: rgb(255, 255, 255);
+    }
+    
+    .button{
+        border: none;
+        width: 100%;
+        color: white;
+        font-size: 20px;
+        font-family: 'Montserrat', sans-serif;
+        background: #3d2901;
+        padding:15px 20px ;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .button:hover{
+        background: rgb(164, 132, 97);
+    }
+    
+    p{
+        text-align: center ;
+    }
+    
+    .link{
+        text-decoration: none;
+        color: #726a62;
+        font-weight: 600;
+    }
+    
+    .link:hover{
+        color:rgb(234, 242, 163);
+    }
+
+
+    /*RESPOSIVIDAD*/
+    @media(min-width:768px){
+    .formulario{
+        margin:auto;
+        width: 500px;
+        margin-top: 150px;
+        border-radius:2%;
+        }
+    }
+    
+

@@ -1,0 +1,116 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;  
+}
+html {
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.contenedor {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#inicio {
+    background-image: url(../Images/sheri-silver-cG9WtPNHI38-unsplash.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+    position:relative;
+    z-index: 1;
+}
+#inicio::after{
+    content: '';
+    position:absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .4;
+    z-index: -1;
+}
+#inicio .inicio{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+}
+#inicio h1{
+    display: block;
+    width: fit-content;
+    font-size: 3.5rem;
+    position: relative;
+    color: transparent;
+    animation: revelacion_txt .5s ease forwards;
+    animation-delay: 1s;
+}
+#inicio h1:nth-child(1){ /*Texto 1*/
+    animation-delay: 1s;
+}
+#inicio h1:nth-child(2){ /*Texto 2*/
+    animation-delay: 2s;
+}
+#inicio h1:nth-child(3){ /*Texto 3*/
+    animation-delay: 3s;
+}
+#inicio h1 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: rgb(110, 79, 42);
+    animation: caja_revelacion_txt 1s ease;
+    animation-delay: .5s;
+}
+#inicio h1:nth-child(1) span{ /*Texto 1*/
+    animation-delay: .5s;
+}
+#inicio h1:nth-child(2) span{ /*Texto 2*/
+    animation-delay: 1.5s;
+}
+#inicio h1:nth-child(3) span{ /*Texto 3*/
+    animation-delay: 2.5s;
+}
+#inicio .btn{
+    display: inline-block;
+    padding: 10px 30px;
+    color: rgb(253, 253, 253);
+    background-color: transparent;
+    border: 2px solid rgb(142, 113, 49);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 20px;
+    transition: .3s ease;
+    transition-property: background-color, color;
+}
+#inicio .btn:hover{
+    color: white;
+    background-color: rgb(173, 159, 144);
+}
+
+/*Animiación*/
+@keyframes caja_revelacion_txt{
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: 0;
+        left: 100%;
+    }
+}
+@keyframes revelacion_txt{
+    100%{
+        color: white;
+    }
+}

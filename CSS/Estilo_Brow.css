@@ -1,0 +1,281 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+body{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+*{
+    font-family:'Montserrat', sans-serif;
+}
+
+.contenedor{
+    width: 100%;
+    margin: auto;
+}
+
+img{
+    width: 100%;
+}
+
+.banner{
+    height: 50vh;
+    margin-top: 10%;
+    position: relative;
+    background: url(../Images/brownies.jpg);
+    background-size:calc(105%);
+    background-position: unset;
+    background-attachment: fixed;
+}
+
+.banner_descripcion{
+    position: absolute;
+    margin-top: -2%;
+    background: linear-gradient(rgb(5, 5, 5),rgb(135, 67, 3));
+    -webkit-background-clip: text ;
+    color: transparent;  
+    text-align:center;
+    transform: translateX(10%) translateY(40%);
+    font-weight: bolder;
+    padding:50px;
+    font-size:100px;
+    font-weight: bolder;
+}
+
+/*MENU*/
+header{
+    position: fixed;
+    top:0; 
+    left:0; 
+    right:0;
+    background:#fff;
+    padding:2rem 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(244, 240, 240, 0.881);
+}
+
+.navbar{
+    padding:0px ;
+    margin: auto;
+}
+
+/*LOGO*/
+header .logo{
+    font-size: 2rem;
+    color: #333;
+    font-weight: bolder;
+}
+
+header .logo span{
+    color:var(--cafe);
+}
+
+header #toggler{
+    display: none;
+}
+
+header .fa-bars{
+    font-size: 3rem;
+    color: #333;
+    border-radius: .5rem;
+    padding:.5rem 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+/*MENU*/
+ul, ol{
+    list-style: none;
+}
+
+.menu > li{
+    display: inline;
+}
+
+header .navbar a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 50px;
+    font-size: 18px;
+    display:inline;
+}
+
+header .navbar a:hover{
+    color:var(--cafe);
+}
+
+.submenu li{
+    margin-top: 3.5%;
+    float:right;
+    position:sticky;
+    display:flex;
+    padding: 0 8px;
+    background-color: rgb(249, 245, 245);
+}
+
+.submenu li a{
+    font-size: 15px;
+}
+
+header .navbar li ul{
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+
+header .navbar li:hover > ul{
+    display: block;
+    float: left;
+}
+
+/*ICONOS*/
+header .icons a{
+    font-size: 2rem;
+    color:0 rgb(35, 34, 34);
+    margin-left: 1.5rem;
+}
+
+header .icons a:hover{
+    color:var(--cafe);
+}
+
+/*HOME*/
+.contenedor-h{
+    margin:50px 50px 50px 5%;
+    width:90%;
+    text-align:center;
+
+}
+
+.categorias{
+    width:max-content;
+    margin:25px;
+    border:1px transparent;
+    display:inline-block;
+     padding-bottom: 10px;    
+}
+
+.categorias .btn:hover{
+    background: rgb(228, 228, 162);
+}
+
+.categorias:hover{
+    box-shadow:0 0 10px 3px #d0c3a1;
+}
+
+.categorias .btn{
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 15px;
+    border-radius: 4rem;
+    background: rgb(246, 184, 91);
+    padding: 1rem;
+    cursor: pointer;
+
+}
+
+.item-image {
+    height:200px;
+    width:200px;
+    border-radius:10px 10px 10px 10px;
+    padding:10px;
+}
+
+.image-title{
+    text-align:center;
+    padding:10px;
+    font-weight:bold;
+}
+
+a{
+    text-decoration:none;
+    color: rgb(67, 52, 23);
+}
+@media screen and (max-width: 800px){
+    .banner{
+        height: 50vh;
+        margin-top: 5%;
+        position: relative;
+        background: url(../Images/brownies.jpg);
+        background: linear-gradient(left, rgba(255,255,255,1), rgba(255,255,255,1)), url(../Images/brownies.jpg);
+        background-size: cover;
+        background-position:unset;
+        background-attachment: fixed;
+    }
+    
+    .banner_descripcion{
+        position: relative;
+        background: linear-gradient(rgb(5, 5, 5),rgb(135, 67, 3));
+        -webkit-background-clip: text ;
+        color: transparent;  
+        text-align:center;
+        transform: translateX(10%) translateY(40%);
+        font-weight: bolder;
+        padding:50px;
+        font-size: 7.5rem;
+        font-weight: bolder;
+        margin-left: -10rem;
+        -webkit-text-stroke: 0.01px rgb(255, 255, 255);
+    }
+}
+
+
+ /* RESPOSIVIDAD*/
+ @media (max-width:1200px) {
+    html {
+        font-size: 55%;
+    }
+    
+    header{
+        padding:.5rem;
+        font-size: 5%;
+        padding:1.5rem;
+    }
+}
+
+@media (max-width:850px) {
+    header .fa-bars{
+        display: block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%;left: 0;right: 0;
+        background: #eee;
+        border-top: .1rem solid rgb(0, 0, 0,.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header #toggler:checked ~ .navbar{
+        clip-path:polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a{
+        margin:1.5rem;
+        padding:1.5rem;
+        background:#fff;
+        border:.1rem solid rgba(0,0,0,.1);
+        display: block;
+    }
+
+    .icons-container .icons h3{
+        font-size: 2rem;
+    }
+    
+    .icons-container .icons span{
+        font-size: 1.7rem;
+    }
+
+    .submenu li{
+        margin-top: -2%;
+        padding: 0 1px;
+    }
+}
+
+@media (max-width:450px){
+    html {
+        font-size: 50%;
+    }
+}
