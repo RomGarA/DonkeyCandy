@@ -1,0 +1,38 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta name="viewport" content="width=device=width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+        <meta charset="UTF-8"/>
+        <title>Donkey Candy | Ingreso</title>
+        <link rel="icon" type="image/png" href="./Images/ICO/logo1.ico"/>
+        
+        <script src='./JS/logreg.js'></script>
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"> 
+        <link rel="stylesheet" href="CSS/Estilo_Ing.css">
+    </head>
+    <body>
+        <form class="formulario">
+        <div class="logo"><img src="./Images/logo-circ.png" alt="Donkey Candy"></div>
+        
+        <h1>Inicio de sesión</h1>
+        <div class="contenedor">
+            <!--CORREO-->
+            <div class="input-contenedor">
+                <i class="far fa-envelope icon"></i>
+                <label for="correo"></label>
+                <input type="text" placeholder="Correo electronico">
+            </div>
+            <!--CONTRASEÑA-->
+            <div class="input-contenedor">
+                <i class="fas fa-key icon"></i>
+                <label for="contraseña"></label>
+                <input type="password" placeholder="Contraseña">
+            </div>
+            
+            <a href="Home.html"><input type="button" value="Ingresa" class="button" onclick=valida()></a>
+            <p>¿Aún no tienes cuenta? <a class="link" href="Registro.html">Registrate</a></p>
+            <p>Continuar como <a class="link" href="Home.html">invitado</a></p>
+        </div>
+        </form>
+    </body>
+</html>
