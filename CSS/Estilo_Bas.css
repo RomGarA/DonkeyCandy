@@ -1,0 +1,92 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+body{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    background:linear-gradient(30deg, LightPink,LightCyan, CornSilk);
+}
+
+*{
+    font-family:'Montserrat', sans-serif;
+}
+
+.contenedor{
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.bigger{
+    font-size: 200%;
+    text-align: center;
+}
+
+.shorter{
+    font-size: 100%;
+    text-align: center;
+}
+
+.gif{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.banner{
+    height: 90vh;
+    margin-top: 5%;
+    position: relative;
+    align-items: center;
+    background: url(../Images/bck8.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.banner_descripcion{
+    position: absolute;
+    background:rgba (0,0,0,0.5);
+    text-align:left;
+    max-width: 50rem;
+    transform: translateX(1%) translateY(35%);
+    color:rgb(0, 0, 0);
+    padding:50px;
+    font-weight: bolder;
+}
+
+.banner_descripcion h3{
+    font-size: 4.5rem;
+    color: #1f1f1f;
+}
+
+.banner_descripcion span{
+    font-size: 2rem;
+    color: #b0627d;
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+.banner_descripcion p{
+    font-size: 1.5rem;
+    color: #7c603e;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.banner_descripcion .btn{
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 15px;
+    border-radius: 4rem;
+    background: rgb(203, 216, 222);
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.banner_descripcion .btn:hover{
+    background: beige;
+}
